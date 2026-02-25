@@ -1,3 +1,5 @@
+// entrada de dados usando a classe JOptionPane
+
 import javax.swing.JOptionPane;
 
 public class EntradaDeDados2 {
