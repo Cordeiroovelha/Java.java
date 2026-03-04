@@ -7,10 +7,10 @@ public class BankAccountMain {
 		account1.displayDetails();
 		account1.deposit(1000);
 		System.out.println("--------------------------");
-	    System.out.println("Saldo atualizado");
+	    System.out.println("Saldo atualizado: +1000");
 	    System.out.println("--------------------------");
 	    account1.withDraw(500);
-	    System.out.println("Saldo atualizado");
+	    System.out.println("Saldo atualizado: -500");
 	    System.out.println("--------------------------");
 	    account1.displayDetails();
 	
@@ -18,13 +18,14 @@ public class BankAccountMain {
 	    account2.displayDetails();
 	    account2.deposit(100);
 	    System.out.println("--------------------------");
-	    System.out.println("Saldo atualizado");
+	    System.out.println("Saldo atualizado: +100");
 	    System.out.println("--------------------------");
 	    account1.withDraw(500);
 	    System.out.println("--------------------------");
-	    System.out.println("Saldo atualizado");
+	    System.out.println("Saldo atualizado: -500 (erro)");
 	    System.out.println("--------------------------");
 	    account2.displayDetails();
 	}
 }
+
 
