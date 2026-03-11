@@ -22,4 +22,35 @@ public class PeopleManager {
         return false;
     }
 
+    public Person search(String id){
+        for(Person person: peopleList){ // for aprimorado para coleções
+            if(person.getId().equals(id)){ // para comparação de strings tem que usar .equals
+                return person;
+            }
+        }
+        return null;
+    }
+
+    public boolean update(String id, String newName){
+        Person person = search(id);
+        if(person != null){
+            int index = peopleList.indexOf(person);
+            if(index != -1){
+                person.setName(newName);
+                peopleList.set(index, person);
+                return true;
+            }
+        }
+            return false;
+    }
+
+
+    public boolean remove(String id){
+        Person person = search(id);
+        if(person != null){
+            peopleList.remove(person);
+            return true;
+        }
+        return false;
+    }
 }
