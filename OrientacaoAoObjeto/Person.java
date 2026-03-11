@@ -2,11 +2,11 @@ package OrientacaoAoObjeto;
 
 public class Person{
     private String name;
-    private String Id;
+    private String id;
 
-    public Person(String name, String Id){
+    public Person(String name, String id){
         this.name = name;
-        this.Id = Id;
+        this.id = id;
     }
 
     public void setName(String name){
@@ -16,16 +16,16 @@ public class Person{
         return name;
     }
 
-    public void setId(String Id){
-        this.Id = Id;
+    public void setId(String id){
+        this.id = id;
     }
     public String getId(){
-        return Id;
+        return id;
     }
 
     @Override
     public String toString(){
-        return "Dados da pessoa [Nome: " + name + " - CPF: " + Id + "]";
+        return "Dados da pessoa [Nome: " + name + " - CPF: " + id + "]";
     }
 
 }
