@@ -1,0 +1,16 @@
+package OrientadoAInterface.checkout.model;
+
+public class Epson implements Printer {
+
+	@Override
+	public void print(Printable printable) {
+		System.out.println("* * * * * * * * * * * * * * * * * *");
+		System.out.println(printable.getPageHeader());
+		System.out.println("* * * * * * * * * * * * * * * * * *");
+		System.out.println(printable.getPageBody());
+		System.out.println("- - - - - - - - - - - - - - - - - -");
+		System.out.println("== EPSON ==");
+		System.out.println("- - - - - - - - - - - - - - - - - -");
+	}
+
+}
